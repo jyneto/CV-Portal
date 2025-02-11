@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #333;
+    color: antiquewhite;
+}
+  
+  /* HEADER */
+header {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+    background-color: #333;
+    color: bisque;
+}
+  
+.logo {
+    /* font-size: 1.8rem; Byta till större? */
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Tangerine', cursive;
+    padding-left: 1rem;
+}
+  
+  /* NAV */
+nav ul {
+    
+    list-style: none;
+    display: flex;
+    font-family: "Exo 2", sans-serif;
+}
+  
+nav a.active {
+    color: #f39c12;
+    font-weight: bolder;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+  
+nav a:hover {
+    background-color: #f39d1276;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    transition: ease-in-out 0.2s;
+}
+  
+nav ul li a {
+   
+    padding: 0.5rem 1rem;
+    color: antiquewhite;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+  /* MAIN */
+main{
+    display: grid;
+    margin-top: 0;
+    background-color: rgb(47, 79, 79);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    flex: 1;
+}
+
+
+main ul{
+    padding-left: 2rem;
+}
+
+.intro{
+    padding: 1rem;
+    
+  }
+  
+.intro1, .contact-form {
+
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    flex-direction: column;
+    padding:1rem;
+    order:1;
+}
+  
+h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-family: "Exo 2", sans-serif;
+}
+  
+h2 {
+    font-size: 1.5rem;
+    color:#f39c12 ;
+}
+  
+h3 {
+    font-size: 1.2rem;
+    padding: 0.5rem 0.5rem;
+    color: #e5ae57;
+}
+  
+h4 {
+    color: #ecf0f1;
+}
+  
+  p,a,li {
+    font-size: 1rem;
+    letter-spacing:0.2 rem; 
+    line-height: 1.4rem;
+    /* text-decoration: none; */
+    color: bisque;
+
+}
+
+.image {
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(47, 79, 79);
+    padding: 0.5em;
+    order:2; 
+  
+}
+  
+.profilepic{
+    min-height: auto;
+    border-radius: 1.6rem;
+    box-shadow: 0 0 3rem  rgb(118, 106, 106);
+    
+}
+
+.sideImage {
+    /* min-height: auto; */
+    border-radius: 1.6rem;
+    box-shadow: 0 0 3rem rgb(118, 106, 106);
+    position: sticky;
+    top: 0;
+    order:1;
+}
+  
+.button{
+    display: inline-block;
+    margin:1.5rem 1rem;
+    padding: 0.5em 1.5em;
+    background-color: #f39c12;
+    text-decoration: none;
+    color: white;
+    font-family: "Exo 2", sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    position: relative; 
+    transition: transform 0.2s ease, background-color 0.5s ease; 
+   
+}
+
+.button:hover {
+    transform: scale(1.05); 
+    background-color: rgba(141, 96, 23, 0.779);
+    padding: 0.5em 1.5em;
+   
+}
+
+
+/*MODAL*/
+
+.project-list{
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 2.5rem;
+}
+
+.project-item {
+    background-color: #333;
+    padding: 1.25rem; /* 20px to rem */
+    border-radius: 0.5rem; /* 8px to rem */
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* 10px to rem */
+    width: 15.625rem; /* 250px to rem */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.project-item:hover{
+   transform: scale(1.05);
+   box-shadow: 0 0 3rem  rgb(118, 106, 106);
+
+}
+.project-item img{
+    width:100%;
+    border-radius: 8 px;
+} 
+
+/*CONTACT FORM*/
+.contact-form {
+ 
+    border:#6c7880 solid;
+    padding: 1rem;
+    border-radius: 8px;
+  
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: rgb(232, 218, 197);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+a {
+    text-decoration: none;
+    color: #378ae8;
+    font-family: "Exo 2", sans-serif;
+    font-size: 0.8rem;
+
+}
+
+a:hover{
+    color: #f39c12;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color:  rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: rgb(133, 102, 102);
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.modal-content1{
+    max-width: 300px;
+    background-color:  #514e4e;
+    border-radius: 8px;
+    text-align: center;
+    padding: 1rem;
+
+
+}
+
+.modalClose{
+    display: flex;
+    justify-self: flex-end;
+    
+    color:antiquewhite;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    
+
+}
+
+.modal1 {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+    z-index: 1;
+    backdrop-filter: blur(0.0625rem);
+}
+.modal1:target{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 0.8rem;
+}   
+
+footer p {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+
+  
+  /* Media Queries */
+  
+  /* For very small screens like 320px (mobile devices) */
+@media (max-width: 600px) {
+    .logo {
+    font-size: 1.2rem; /* smaller logo for narrow screens */
+    padding-left: 1rem;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+        }
+  
+    nav ul li a {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+  
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .intro1{
+        order: 2;
+    }
+  
+    .intro h1 {
+      font-size: 1.8rem; /* reduce font size for narrow screens */
+      line-height: 2.3rem;
+    }
+  
+    .intro h2 {
+      font-size: 1.3rem;
+    }
+  
+    .intro h3 {
+      font-size: 1rem;
+    }
+  
+    p, a, li {
+      font-size: 0.9rem; /* reduce font size for better readability on small screens*/
+    }
+    .image{
+        order: 1;
+        padding-top: 0.5rem;
+    }
+    .profilepic {
+      width: 130px;
+      height: 150px; /* Smaller profile picture */
+    } 
+  
+    button {
+        margin: 1rem 05.5rem;
+        padding: 0.5em 1em;
+        font-size: 0.9rem;
+    }
+} 

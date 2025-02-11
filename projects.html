@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <title>J.Toledo</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">J.Toledo</h1>
+        <nav>
+          <ul>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="about.html" >About</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main>  
+    
+      <section class="image">
+        <img src="IMAGE/escr.jpg" class="sideImage" alt="holding mobile image">
+      </section>
+
+
+      <section class="intro">
+        
+        <div class="project-list">
+          <div class="project-item">
+            <h3>ChasChing BankApp</h3>
+            <img src="IMAGE/proj1.png" alt="Project Image">
+             <a href="#ChasChing" class="more-info">more info</a>
+
+ 
+          </div>
+
+          <div class="project-item">
+            <h3>OOP Basics</h3>
+            <img src="IMAGE/proj2.png" alt="Project Image">
+            <a href="#OOPbasics" class="more-info">more info</a>
+            
+          </div>
+
+          <div class="project-item">
+            <h3>School System Database</h3>
+            <img src="IMAGE/proj3.png" alt="Project Image">
+            <a href="#SchoolDB" class="more-info">more info</a>
+          </div>
+
+        </div>
+
+        <!-- Modal -->
+        <div id="ChasChing" class="modal1"> <!--Modal for ChasChing-->
+          <div class="modal-content1">
+            <a href="#" class="modalClose">
+              &times;
+            </a>
+            <h3>ChasChing BankApp</h3>
+            <p>"Group project where me and my team build a console bank application in using specter as UI ."</p>
+            <a href="https://github.com/CamillaSoderman/Chas-Ching" target="_blank">GitHub Repo</a>
+          </div>
+        </div>
+
+        <div id="OOPbasics" class="modal1"> <!--Modal for ChasChing-->
+          <div class="modal-content1">
+            <a href="#" class="modalClose">
+              &times;
+            </a>
+            <h3>Basic OOP Zoo</h3>
+            <p>"In this assignment we where challange to use inheritance in object-oriented programming. 
+              The task largely involves thinking about a structure for inheritence but also includes partially ipmlementing it in code."</p>
+            <a href="https://github.com/jyneto/OOP-Basics--Zoo-">GitHub Repo</a>
+          </div>
+        </div>
+
+        <div id="SchoolDB" class="modal1"> <!--Modal for ChasChing-->
+          <div class="modal-content1">
+            <a href="#" class="modalClose">
+              &times;
+            </a>
+            <h3>School System  Database</h3>
+            <p>"The main point of this assignment is to learn how use LINQ with Entity Framework and database through SSMS.;"</p>
+            <a href="https://github.com/jyneto/OOP-Basics--Zoo-">GitHub Repo</a>
+          </div>
+        </div>
+
+       
+      </section> 
+   </main>
+ <footer>
+    <p>&copy; 2025 Jane Toledo</p>
+ </footer>  
+
+</body>
+</html>

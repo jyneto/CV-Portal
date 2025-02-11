@@ -1,0 +1,65 @@
+
+/* Print styles */
+@media print {
+    body {
+        font-family: Arial, sans-serif;
+        /* color: #bd7a7a; */
+        background: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    header, nav, footer {
+        display: none; /* Hide header, navigation, and footer */
+    }
+
+    main {
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    h1, h2, h3 {
+        color: #000;
+    }
+
+    .intro {
+        margin-bottom: 1rem;
+    }
+
+    .intro h2 {
+        border-bottom: 1px solid #000;
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .intro p, .intro li {
+        margin-bottom: 0.3rem;
+        color: #00000090;
+    }
+
+    .intro li {
+        list-style-type: disc;
+        margin-left: 1.5rem;
+    }
+
+    .intro div {
+        margin-bottom: 1rem;
+    }
+
+    .intro h3 {
+        /* margin-top: 1rem;
+        margin-bottom: 0.5rem; */
+        font-size: 1rem;
+
+    }
+
+    .intro p {
+        margin-top: 0;
+    }
+
+    @page {
+        margin: 1cm;
+    }
+}
